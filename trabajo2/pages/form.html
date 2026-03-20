@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Modificando Elementos</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="encabezado_clase" id="encabezado">
+            <h1>Modificando Elementos</h1>
+        </header>
+        <nav id="barraNav">
+            <ul>
+                <li><a href="form.html">Formulario</a></li>
+                <li><a href="#secc2">Sección 2</a></li>
+                <li><a href="#secc3">Sección 3</a></li>
+                <li><a href="../index.html">Regresar</a></li>
+                <li><button id="cambiar_menu">Modificar Menú</button></li>
+            </ul>
+        </nav>
+        <main class="contenedor-form">
+            <section>
+                <form>
+                    <label for="dinero">Nombre</label> <br>
+                    <input type="text" id="dinero"> <br>
+                    <label for="hola">Contraseña</label> <br>
+                    <input type="password" id="hola"> <br><br>
+                    <button type="button" onclick="mostrar_datos();">Enviar</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Datos del usuario</h2>
+                <div>
+                    <p id="m_nombre">Nombre</p>
+                    <p id="m_contra">Contraseña</p>
+                </div>
+            </section>
+        </main>
+        <script src="../js/elementos.js"></script>
+    </body>
+</html>
