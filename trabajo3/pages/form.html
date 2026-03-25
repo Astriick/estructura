@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Modificando Elementos</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header class="encabezado_clase" id="encabezado">
+            <h1>SICHARLAS</h1>
+        </header>
+        <nav id="barraNav">
+            <ul>
+                <li><a href="form.html">Formulario</a></li>
+                <li><a href="#secc2">Sección 2</a></li>
+                <li><a href="#secc3">Sección 3</a></li>
+                <li><a href="../index.html">Regresar</a></li>
+                <li><button id="cambiar_menu">Modificar Menú</button></li>
+            </ul>
+        </nav>
+        <main class="contenedor-form">
+            <section>
+                <form>
+                    <label for="nombre">Nombre</label> <br>
+                    <input type="text" id="nombre"> <br>
+                    <label for="numCuenta">Numero de cuenta</label> <br>
+                    <input type="text" id="numCuenta"> <br>
+                    <label for="nomCharla">Nombre de la charla</label> <br>
+                    <input type="text" id="nomCharla"> <br>
+                    <label for="cupoMaximo">Cupo maximo</label> <br>
+                    <input type="text" id="cupoMaximo"> <br> <br>
+                    <button type="button" onclick="mostrar_datos();">Registrar</button>
+                    <button type="button" onclick="">Cancelar</button>
+                </form>
+            </section>
+            <section>
+                <h2>Datos de la conferencia</h2>
+                <div>
+                    <p id="m_nombre">Nombre</p>
+                    <p id="m_numCuenta">Numero de cuenta</p>
+                    <p id="m_nomCharla">Nombre de la charla</p>
+                    <p id="m_cupoMaximo">Cupo Maximo</p>
+                </div>
+            </section>
+        </main>
+        <script src="../js/elementos.js"></script>
+    </body>
+</html>
